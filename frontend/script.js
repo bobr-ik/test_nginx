@@ -1,7 +1,7 @@
 elem = document.getElementById('time');
 
 async function update() {
-    let res = await fetch('api/time');
+    let res = await fetch('/api/time');
     let json = await res.json();
     elem.innerHTML = json.ans;
 }
