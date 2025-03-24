@@ -15,7 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/time/")
+@app.get("/time")
 def ping():
     return {"ans": time()}
 
